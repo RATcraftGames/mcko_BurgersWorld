@@ -1,0 +1,19 @@
+.stocks__text {
+  font-size: calc(100vw / (760 / 14));
+  margin: 0 calc(100vw / (760 / 32)) 0 calc(100vw / (760 / 8));
+  text-indent: 0;
+}
+
+@media screen and (min-width: 777px){
+  .stocks__text {
+    font-size: 14px;
+    margin: 0 32px 0 8px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .stocks__text {
+    font-size: calc(320px / (760 / 14));
+    margin: 0 calc(320px / (760 / 32)) 0 calc(320px / (760 / 8));
+  }
+}

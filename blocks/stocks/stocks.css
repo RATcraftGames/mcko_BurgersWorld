@@ -1,0 +1,29 @@
+.stocks {
+  width: calc(100vw / (760 / 370));
+  height: calc(100vw / (760 / 115));
+  border-radius: calc(100vw / (760 / 20));
+  margin-bottom: calc(100vw / (760 / 12));
+  background: #2581B5;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 777px){
+  .stocks {
+    width: 370px;
+    height: 115px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .stocks {
+    width: calc(320px / (760 / 370));
+    height: calc(320px / (760 / 115));
+    border-radius: calc(320px / (760 / 20));
+    margin-bottom: calc(320px / (760 / 12));
+  }
+}

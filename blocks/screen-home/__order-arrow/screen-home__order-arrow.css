@@ -1,0 +1,35 @@
+.screen-home__order-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw / (760 / 37));
+  height: calc(100vw / (760 / 25));
+  background: #2581B5;
+  border-radius: calc(100vw / (760 / 10));
+  border: none;
+  cursor: pointer;
+}
+
+.screen-home__order-arrow:focus{
+  outline: none;
+}
+
+.screen-home__order-arrow:active{
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__order-arrow {
+    width: 37px;
+    height: 25px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__order-arrow {
+    width: calc(320px / (760 / 37));
+    height: calc(320px / (760 / 25));
+    border-radius: calc(320px / (760 / 10));
+  }
+}

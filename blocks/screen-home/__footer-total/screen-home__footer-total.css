@@ -1,0 +1,23 @@
+.screen-home__footer-total {
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 20));
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin-left: calc(100vw / (760 / 20));
+  text-indent: 0;
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__footer-total {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__footer-total {
+    font-size: calc(320px / (760 / 20));
+    margin-left: calc(320px / (760 / 20));
+  }
+}

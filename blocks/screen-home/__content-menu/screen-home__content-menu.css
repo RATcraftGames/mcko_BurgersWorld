@@ -1,0 +1,28 @@
+.screen-home__content-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100vw / (760 / 389));
+  height: calc(100vw / (760 / 495));
+  background-color: #FBF9EE;
+  border-radius: calc(100vw / (760 / 12));
+  box-shadow: 0 calc(100vw / (760 / 6)) calc(100vw / (760 / 4)) rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__content-menu {
+    width: 389px;
+    height: 495px;
+    border-radius: 12px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__content-menu {
+    width: calc(320px / (760 / 389));
+    height: calc(320px / (760 / 495));
+    border-radius: calc(320px / (760 / 12));
+    box-shadow: 0 calc(320px / (760 / 6)) calc(320px / (760 / 4)) rgba(0, 0, 0, 0.25);
+  }
+}

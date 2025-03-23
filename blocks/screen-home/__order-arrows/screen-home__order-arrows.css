@@ -1,0 +1,18 @@
+.screen-home__order-arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100vw / (760 / 37));
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__order-arrows {
+    width: 37px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__order-arrows {
+    width: calc(320px / (760 / 37));
+  }
+}

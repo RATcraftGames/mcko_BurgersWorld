@@ -1,0 +1,20 @@
+.order__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 18));
+  line-height: 1.2;
+  color: #fff;
+  margin: 0;
+}
+
+@media screen and (min-width: 777px){
+  .order__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .order__text {
+    font-size: calc(320px / (760 / 18));
+  }
+}

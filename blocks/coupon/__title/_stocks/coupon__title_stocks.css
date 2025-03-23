@@ -1,0 +1,15 @@
+.coupon__title_stocks {
+  margin: calc(100vw / (760 / 15)) 0 calc(100vw / (760 / 9));
+}
+
+@media screen and (min-width: 777px){
+  .coupon__title_stocks {
+    margin: 15px 0 9px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .coupon__title_stocks {
+    margin: calc(320px / (760 / 15)) 0 calc(320px / (760 / 9));
+  }
+}

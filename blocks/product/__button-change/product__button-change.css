@@ -1,0 +1,41 @@
+.product__button-change {
+  width: calc(100vw / (760 / 22));
+  height: calc(100vw / (760 / 22));
+  border-radius: calc(100vw / (760 / 11));
+  background: #2581B5;
+  font-size: calc(100vw / (760 / 22));
+  transition: opacity 0.2s linear;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.product__button-change:hover {
+  opacity: 0.8;
+}
+
+.product__button-change:active {
+  outline: none;
+}
+
+.product__button-change:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .product__button-change {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .product__button-change {
+    width: calc(320px / (760 / 22));
+    height: calc(320px / (760 / 22));
+    border-radius: calc(320px / (760 / 11));
+    font-size: calc(320px / (760 / 22));
+  }
+}

@@ -1,0 +1,21 @@
+.screen-home__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw / (760 / 485));
+  height: calc(100vw / (760 / 76));
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__footer {
+    width: 485px;
+    height: 76px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__footer {
+    width: calc(320px / (760 / 485));
+    height: calc(320px / (760 / 76));
+  }
+}

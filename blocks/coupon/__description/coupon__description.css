@@ -1,0 +1,28 @@
+.coupon__description {
+  width: calc(100vw / (760 / 375));
+  height: calc(100vw / (760 / 175));
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 14));
+  line-height: 1.2;
+  color: #0C0C0D;
+  margin: calc(100vw / (760 / 22)) 0;
+}
+
+@media screen and (min-width: 777px){
+  .coupon__description {
+    width: 375px;
+    height: 172px;
+    font-size: 14px;
+    margin: 22px 0;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .coupon__description {
+    width: calc(320px / (760 / 375));
+    height: calc(320px / (760 / 172));
+    font-size: calc(320px / (760 / 14));
+    margin: calc(320px / (760 / 22)) 0;
+  }
+}

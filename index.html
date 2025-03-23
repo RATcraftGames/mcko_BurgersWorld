@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Имитационный блок Бургерная</title>
+  <link rel="stylesheet" href="./pages/index.css?v1.0">
+</head>
+<body>
+  <main class="page">
+    <section class="screen screen-start screen_opened">
+      <button type="button" class="screen-start__button" aria-label="Сделать заказ">
+        НАЖМИТЕ, ЧТОБЫ СДЕЛАТЬ ЗАКАЗ
+      </button>
+    </section>
+    <section class="screen screen-intermediate">
+      <button type="button" class="screen-intermediate__button screen-intermediate__button-in-the-hall" aria-label="В зале">
+        В ЗАЛЕ
+      </button>
+      <button type="button" class="screen-intermediate__button screen-intermediate__button-takeaway" aria-label="С собой">
+        С СОБОЙ
+      </button>
+    </section>
+    <section class="screen screen-home">
+      <div class="screen-home__header">
+        <button type="button" class="screen-home__header-button" aria-label="Отмена">Отмена</button>
+        <h1 class="screen-home__title">
+          Добро пожаловать в «Мир бургеров»
+        </h1>
+      </div>
+      <div class="screen-home__content">
+        <div class="screen-home__content-category">
+          <button type="button" class="screen-home__content-buttons screen-home__content-buttons_burgers screen-home__content-buttons_active" id="burgers" aria-label="Бургеры">
+            <img src="./images/burger-icon.svg" alt="Иконка Бургеры">
+            Бургеры
+          </button>
+          <button type="button" class="screen-home__content-buttons screen-home__content-buttons_salads" id="salads" aria-label="Салаты">
+            <img src="./images/salad-icon.svg" alt="Иконка Салаты">
+            Салаты
+          </button>
+          <button type="button" class="screen-home__content-buttons screen-home__content-buttons_drinks" id="drinks" aria-label="Напитки">
+            <img src="./images/drink-icon.svg" alt="Иконка Напитки">
+            Напитки
+          </button>
+          <button type="button" class="screen-home__content-buttons screen-home__content-buttons_coupons" id="coupons" aria-label="Купоны">
+            <img src="./images/coupon-icon.svg" alt="Иконка Купоны">
+            Купоны
+          </button>
+          <button type="button" class="screen-home__content-buttons screen-home__content-buttons_stocks" id="stocks" aria-label="Акции">
+            <img src="./images/stock-icon.svg" alt="Иконка Акции">
+            Акции
+          </button>
+        </div>
+        <div class="screen-home__content-menu screen-home__burgers screen-home__content-menu_display_flex"></div>
+        <div class="screen-home__content-menu screen-home__salads"></div>
+        <div class="screen-home__content-menu screen-home__drinks"></div>
+        <div class="screen-home__content-menu screen-home__coupons"></div>
+        <div class="screen-home__content-menu screen-home__stocks">
+          <p class="coupon__title coupon__title_stocks">
+            В настоящий момент в «Мире бургеров» действуют
+            следующие акции.
+          </p>
+          <div class="stocks stocks_height_one">
+            <h2 class="stocks__title">ПОЛНЫЙ НАБОР</h2>
+            <p class="stocks__text">При покупке полного набора из бургера, салата и
+              напитка действует скидка 15% на каждый полный набор.
+              Если полный набор можно составить несколькими
+              способами, скидка будет действовать на полный
+              набор наименьшей стоимости.
+            </p>
+          </div>
+          <div class="stocks">
+            <h2 class="stocks__title">РАЗНООБРАЗНОЕ ПИТАНИЕ</h2>
+            <p class="stocks__text">При покупке 7 различных блюд или напитков действует
+              скидка 7% на весь заказ.</p>
+          </div>
+          <div class="stocks">
+            <h2 class="stocks__title">ДОМА ВЫГОДНЕЕ</h2>
+            <p class="stocks__text">При заказе навынос действует скидка 5% на весь заказ.</p>
+          </div>
+        </div>
+      </div>
+      <div class="screen-home__order ">
+        <div class="screen-home__order-content"></div>
+        <div class="screen-home__order-arrows">
+          <button type="button" class="screen-home__order-arrow
+          screen-home__order-arrow_top
+          screen-home__order-arrow_inactive" aria-label="Стрелка вверх" disabled>
+            <img class="screen-home__order-arrow-image" src="./images/arrow-top.svg" alt="Стрелка вверх">
+          </button>
+          <button type="button" class="screen-home__order-arrow
+          screen-home__order-arrow_bottom
+          screen-home__order-arrow_inactive" aria-label="Стрелка вниз" disabled>
+            <img class="screen-home__order-arrow-image" src="./images/arrow-bottom.svg" alt="Стрелка вниз">
+          </button>
+        </div>
+      </div>
+      <div class="screen-home__footer">
+        <p class="screen-home__footer-total">Сумма заказа: <span class="screen-home__footer-total-price">0</span> руб </p>
+        <button type="button" class="screen-home__footer-button" aria-label="Оплатить">ОПЛАТИТЬ</button>
+      </div>
+    </section>
+  </main>
+  <template class="card-product">
+    <div class="product">
+      <p class="product__text product__text_name"></p>
+      <div class="product__right">
+        <p class="product__text"><span class="product__price"></span> руб</p>
+        <button type="button" class="product__button product__button_add-to-order" aria-label="Добавить в заказ">Добавить в заказ</button>
+        <div class="product__button product__button_added-to-order product__button_display_none">
+          <button type="button" class="product__button-change product__button-change_minus">-</button>
+          <p class="product__change">1</p>
+          <button type="button" class="product__button-change product__button-change_plus">+</button>
+        </div>
+      </div>
+    </div>
+  </template>
+  <template class="card-coupon">
+    <form class="coupon" name="coupon">
+      <p class="coupon__title">
+        Участвуйте в программе 	«Постоянный клиент» и получайте
+        индивидуальный купон после каждого заказа.
+      </p>
+      <label class="coupon__label" for="coupon-input">У меня есть купон:</label>
+      <input type="text" class="coupon__input" placeholder="Введите купон" name="coupon" id="coupon-input" required minlength="2" maxlength="30">
+      <button type="button" class="coupon__button-description  coupon__button-submit_inactive" aria-label="Описание" disabled>ЧИТАТЬ ОПИСАНИЕ</button>
+      <p class="coupon__input-error coupon-input-error coupon__input-error_p0"></p>
+      <p class="coupon__input-error coupon-input-error coupon__input-error_p1"></p>
+      <p class="coupon__input-error coupon-input-error coupon__input-error_p2"></p>
+      <p class="coupon__input-error coupon-input-error coupon__input-error_p3"></p>
+      <p class="coupon__input-error coupon-input-error coupon__input-error_p4"></p>
+      <p class="coupon__input-error coupon-input-error coupon__input-error_p5"></p>
+      <p class="coupon__input-error coupon-input-error coupon__input-error_p6"></p>
+      <p class="coupon__input-error coupon-input-error coupon__input-error_p7"></p>
+      <button type="submit" class="coupon__button-submit coupon__button-submit_inactive" aria-label="Применить" disabled>ПРИМЕНИТЬ</button>
+    </form>
+  </template>
+  <template class="card-order">
+    <div class="order">
+      <button type="button" class="order__delete-button" aria-label="Удалить">X</button>
+      <p class="order__text">
+        <span class="order__name"></span> x <span class="order__quantity"></span>
+      </p>
+    </div>
+  </template>
+  <template class="card-order-coupon">
+    <div class="order">
+      <button type="button" class="order__delete-button" aria-label="Удалить">X</button>
+      <p class="order__text">
+        <span class="order__name"></span><span class="order__quantity order_display_none"></span>
+      </p>
+    </div>
+  </template>
+<script type="module" src="scripts/index.js?v1.0" defer></script>
+</body>
+</html>

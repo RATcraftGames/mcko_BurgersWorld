@@ -1,0 +1,44 @@
+.screen-home__content-buttons {
+  width: calc(100vw / (760 / 90));
+  height: calc(100vw / (760 / 99));
+  background-color: #FFF3A9;
+  border: calc(100vw / (760 / 3)) solid #E4DCB2;
+  border-radius: calc(100vw / (760 / 12)) 0 0 calc(100vw / (760 / 12));
+  box-shadow: 0 calc(100vw / (760 / 6)) 0 rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 14));
+  line-height: 1.2;
+  color: #0C0C0D;
+  cursor: pointer;
+}
+
+.screen-home__content-buttons:focus {
+  outline: none;
+}
+
+.screen-home__content-buttons:active {
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__content-buttons {
+    width: 90px;
+    height: 99px;
+    border-width: 3px 0 3px 3px;
+    border-radius: 12px 0 0 12px;
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__content-buttons {
+    width: calc(320px / (760 / 90));
+    height: calc(320px / (760 / 99));
+    border-width: calc(320px / (760 / 3));
+    border-radius: calc(320px / (760 / 12)) 0 0 calc(320px / (760 / 12));
+    box-shadow: 0 calc(320px / (760 / 6)) 0 rgba(0, 0, 0, 0.25);
+    font-size: calc(320px / (760 / 14));
+  }
+}

@@ -1,0 +1,10 @@
+.screen-home__order-arrow_inactive {
+  box-sizing: border-box;
+  background-color: #727272;
+  color: rgba(0, 0, 0, 0.15);
+  cursor: auto;
+}
+
+.screen-home__order-arrow_inactive:hover {
+  opacity: 1;
+}

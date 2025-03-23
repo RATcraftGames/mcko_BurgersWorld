@@ -1,0 +1,9 @@
+.screen-start {
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("../../images/start-screen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

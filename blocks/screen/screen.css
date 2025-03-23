@@ -1,0 +1,24 @@
+.screen {
+  width: calc(100vw / 1.52);
+  height: calc(100vw / 1.52 * 1.5);
+  margin-top: calc(100vw / (760 / 63));
+  border-radius: calc(100vw / (760 / 20));
+}
+
+@media screen and (min-width: 777px){
+  .screen {
+    width: 500px;
+    height: 750px;
+    margin-top: 63px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen {
+    width: calc(320px / 1.52);
+    height: calc(320px / 1.52 * 1.5);
+    margin-top: calc(320px / (760 / 63));
+    border-radius: calc(320px / (760 / 20));
+  }
+}

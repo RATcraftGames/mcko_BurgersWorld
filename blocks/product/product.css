@@ -1,0 +1,28 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw / (760 / 365));
+  height: calc(100vw / (760 / 53));
+  background: #2581B5;
+  border-radius: calc(100vw / (760 / 20));
+  margin-top: calc(100vw / (760 / 10));
+}
+
+@media screen and (min-width: 777px){
+  .product {
+    width: 365px;
+    height: 53px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .product {
+    width: calc(320px / (760 / 365));
+    height: calc(320px / (760 / 53));
+    border-radius: calc(320px / (760 / 20));
+    margin-top: calc(320px / (760 / 10));
+  }
+}

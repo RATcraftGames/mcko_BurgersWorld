@@ -1,0 +1,35 @@
+.page {
+  zoom: 1.4;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: Russo One, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../../images/burger-screen.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vw * 1.49);
+}
+
+@media screen and (min-width: 777px){
+  .page {
+    width: 760px;
+    height: calc(760px * 1.49);
+  }
+}
+
+@media screen and (max-width: 320px){
+  .page {
+    width: 320px;
+    height: calc(320px * 1.49);
+  }
+}
+
+@-moz-document url-prefix(){
+  .page {
+    transform: scale(1.4);
+  }
+}

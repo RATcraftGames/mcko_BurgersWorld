@@ -1,0 +1,19 @@
+.screen-home__content-buttons_active {
+  width: calc(100vw / (760 / 96));
+  background-color: #FBF9EE;
+  border: none;
+  z-index: 6;
+}
+
+@media screen and (min-width: 777px) {
+  .screen-home__content-buttons_active {
+    width: 96px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .screen-home__content-buttons_active {
+    width: calc(320px / (760 / 96));
+  }
+}
+

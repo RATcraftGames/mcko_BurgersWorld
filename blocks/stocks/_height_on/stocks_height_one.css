@@ -1,0 +1,15 @@
+.stocks_height_one {
+  height: calc(100vw / (760 / 150));
+}
+
+@media screen and (min-width: 777px){
+  .stocks {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .stocks {
+    height: calc(320px / (760 / 150));
+  }
+}

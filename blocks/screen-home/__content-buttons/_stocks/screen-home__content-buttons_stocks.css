@@ -1,0 +1,16 @@
+.screen-home__content-buttons_stocks {
+  transform: translateY(calc(100vw / (760 / -20)));
+  z-index: 1;
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__content-buttons_stocks {
+    transform: translateY(-20px);
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__content-buttons_stocks {
+    transform: translateY(calc(320px / (760 / -20)));
+  }
+}

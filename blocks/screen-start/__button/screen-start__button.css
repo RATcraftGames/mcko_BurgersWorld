@@ -1,0 +1,42 @@
+.screen-start__button {
+  background: linear-gradient(180deg, #161617 0%, #145799 100%);
+  border: none;
+  cursor: pointer;
+  width: calc(100vw / (760 / 446));
+  height: calc(100vw / (760 / 104));
+  border-radius: calc(100vw / (760 / 38));
+  margin-bottom: calc(100vw / (760 / 12));
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 30));
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.screen-start__button:active {
+  outline: none;
+}
+
+.screen-start__button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .screen-start__button {
+    width: 446px;
+    height: 104px;
+    border-radius: 38px;
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-start__button {
+    width: calc(320px / (760 / 446));
+    height: calc(320px / (760 / 104));
+    border-radius: calc(320px / (760 / 38));
+    font-size: calc(320px / (760 / 30));
+    margin-bottom: calc(320px / (760 / 12));
+  }
+}

@@ -1,0 +1,46 @@
+.screen-intermediate__button {
+  border: none;
+  cursor: pointer;
+  width: calc(100vw / (760 / 356));
+  height: calc(100vw / (760 / 158));
+  border-radius: calc(100vw / (760 / 38));
+  margin-bottom: calc(100vw / (760 / 48));
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 48));
+  line-height: 1.2;
+  color: #145799;
+  transition: opacity 0.2s linear;
+}
+
+.screen-intermediate__button:hover {
+  opacity: 0.8;
+}
+
+.screen-intermediate__button:active {
+  outline: none;
+}
+
+.screen-intermediate__button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .screen-intermediate__button {
+    width: 356px;
+    height: 158px;
+    border-radius: 38px;
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-intermediate__button {
+    width: calc(320px / (760 / 356));
+    height: calc(320px / (760 / 158));
+    border-radius: calc(320px / (760 / 38));
+    margin-bottom: calc(320px / (760 / 48));
+    font-size: calc(320px / (760 / 48));
+  }
+}

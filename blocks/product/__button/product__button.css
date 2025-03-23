@@ -1,0 +1,45 @@
+.product__button {
+  display: block;
+  width: calc(100vw / (760 / 75));
+  height: calc(100vw / (760 / 36));
+  background: #fff;
+  border-radius: calc(100vw / (760 / 12));
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 11));
+  line-height: 1.2;
+  color: #145799;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.product__button:hover {
+  opacity: 0.8;
+}
+
+.product__button:active {
+  outline: none;
+}
+
+.product__button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .product__button {
+    width: 75px;
+    height: 36px;
+    border-radius: 12px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .product__button {
+    width: calc(320px / (760 / 75));
+    height: calc(320px / (760 / 36));
+    border-radius: calc(320px / (760 / 12));
+    font-size: calc(320px / (760 / 11));
+  }
+}

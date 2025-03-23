@@ -1,0 +1,28 @@
+.coupon__input-error {
+  width: calc(100vw / (760 / 375));
+  height: calc(100vw / (760 / 21));
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 14));
+  line-height: 1.2;
+  color: #0C0C0D;
+  margin: 0;
+  opacity: 0;
+  text-indent: 0;
+}
+
+@media screen and (min-width: 777px){
+  .coupon__input-error {
+    width: 375px;
+    height: 21px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .coupon__input-error {
+    width: calc(320px / (760 / 375));
+    height: calc(320px / (760 / 21));
+    font-size: calc(320px / (760 / 14));
+  }
+}

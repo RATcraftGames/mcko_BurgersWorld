@@ -1,0 +1,15 @@
+.coupon__input-error_p0 {
+  margin-top: calc(100vw / (760 / 10));
+}
+
+@media screen and (min-width: 777px) {
+  .coupon__input-error_p0 {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .coupon__input-error_p0 {
+    margin-top: calc(320px / (760 / 10));
+  }
+}

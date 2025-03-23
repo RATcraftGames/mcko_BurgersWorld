@@ -1,0 +1,5 @@
+.screen-home__content-category {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}

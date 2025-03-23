@@ -1,0 +1,7 @@
+.screen-intermediate {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #111010 0%, #145799 100%);
+}

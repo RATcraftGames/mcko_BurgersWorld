@@ -1,0 +1,15 @@
+.coupon__input-error_p7 {
+  height: calc(100vw / (760 / 63));
+}
+
+@media screen and (min-width: 777px) {
+  .coupon__input-error_p7 {
+    height: 63px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .coupon__input-error_p7 {
+    height: calc(320px / (760 / 63));
+  }
+}

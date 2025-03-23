@@ -1,0 +1,39 @@
+.order__delete-button {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 18));
+  line-height: 1.2;
+  color: #39B3D8;
+  margin-right: calc(100vw / (760 / 10));
+  transition: opacity 0.2s linear;
+}
+
+.order__delete-button:hover {
+  opacity: 0.8;
+}
+
+.order__delete-button:active{
+  outline: none;
+}
+
+.order__delete-button:focus{
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .order__delete-button {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .order__delete-button {
+    font-size: calc(320px / (760 / 18));
+    margin-right: calc(320px / (760 / 10));
+  }
+}

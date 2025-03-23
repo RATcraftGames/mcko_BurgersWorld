@@ -1,0 +1,19 @@
+.screen-home__content {
+  display: flex;
+  width: calc(100vw / (760 / 485));
+  height: calc(100vw / (760 / 495));
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__content {
+    width: 485px;
+    height: 495px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__content {
+    width: calc(320px / (760 / 485));
+    height: calc(320px / (760 / 495));
+  }
+}

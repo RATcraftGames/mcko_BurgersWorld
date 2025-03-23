@@ -1,0 +1,25 @@
+.coupon__button-submit_inactive {
+  border-width: calc(100vw / 760);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.15);
+  cursor: auto;
+}
+
+.coupon__button-submit_inactive:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 777px){
+  .coupon__button-submit_inactive {
+    border-width: 1px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .coupon__button-submit_inactive {
+    border-width: calc(320px / 760);
+  }
+}

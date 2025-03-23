@@ -1,0 +1,23 @@
+.product__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 16));
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0 calc(100vw / (760 / 5)) 0 calc(100vw / (760 / 5));
+  text-indent: 0;
+}
+
+@media screen and (min-width: 777px){
+  .product__text {
+    font-size: 16px;
+    margin: 0 5px 0 5px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .product__text {
+    font-size: calc(320px / (760 / 16));
+    margin: 0 calc(320px / (760 / 5)) 0 calc(320px / (760 / 5));
+  }
+}

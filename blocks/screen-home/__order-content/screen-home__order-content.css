@@ -1,0 +1,21 @@
+.screen-home__order-content {
+  width: calc(100vw / (760 / 445));
+  height: calc(100vw / (760 / 100));
+  margin-right: calc(100vw / (760 / 3));
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__order-content {
+    width: 445px;
+    height: 100px;
+    margin-right: 3px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__order-content {
+    width: calc(320px / (760 / 485));
+    height: calc(320px / (760 / 100));
+    margin-right: calc(320px / (760 / 3));
+  }
+}

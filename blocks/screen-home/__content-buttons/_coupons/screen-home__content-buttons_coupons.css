@@ -1,0 +1,16 @@
+.screen-home__content-buttons_coupons {
+  transform: translateY(calc(100vw / (760 / -10)));
+  z-index: 2;
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__content-buttons_coupons {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__content-buttons_coupons {
+    transform: translateY(calc(320px / (760 / -10)));
+  }
+}

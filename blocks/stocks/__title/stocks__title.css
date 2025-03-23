@@ -1,0 +1,19 @@
+.stocks__title {
+  font-size: calc(100vw / (760 / 20));
+  margin: calc(100vw / (760 / 10));
+  text-indent: 0;
+}
+
+@media screen and (min-width: 777px){
+  .stocks__title {
+    font-size: 20px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .stocks__title {
+    font-size: calc(320px / (760 / 20));
+    margin: calc(320px / (760 / 10));
+  }
+}

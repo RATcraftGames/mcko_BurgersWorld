@@ -1,0 +1,45 @@
+.screen-home__footer-button {
+  width: calc(100vw / (760 / 184));
+  height: calc(100vw / (760 / 53));
+  background: #39B3D8;
+  border-radius: calc(100vw / (760 / 20));
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 20));
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.2s linear;
+}
+
+.screen-home__footer-button:hover {
+  opacity: 0.8;
+}
+
+.screen-home__footer-button:active {
+  outline: none;
+}
+
+.screen-home__footer-button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .screen-home__footer-button {
+    width: 184px;
+    height: 53px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .screen-home__footer-button {
+    width: calc(320px / (760 / 184));
+    height: calc(320px / (760 / 53));
+    border-radius: calc(320px / (760 / 20));
+    font-size: calc(320px / (760 / 20));
+  }
+}

@@ -1,0 +1,49 @@
+.coupon__input {
+  width: calc(100vw / (760 / 369));
+  height: calc(100vw / (760 / 41));
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 20));
+  line-height: 1.2;
+  color: #000000;
+  border-width: calc(100vw / (760 / 3));
+  border-style: solid;
+  border-color: #145799;
+  box-sizing: border-box;
+  border-radius: calc(100vw / (760 / 20));
+  padding: 0 0 0 calc(100vw / (760 / 20));
+  margin-bottom: calc(100vw / (760 / 10));
+  text-transform: uppercase;
+}
+
+.coupon__input:active {
+  outline: none;
+}
+
+.coupon__input:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 777px){
+  .coupon__input {
+    width: 369px;
+    height: 41px;
+    font-size: 20px;
+    border-width: 3px;
+    border-radius: 20px;
+    padding: 0 0 0 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .coupon__input {
+    width: calc(320px / (760 / 369));
+    height: calc(320px / (760 / 41));
+    font-size: calc(320px / (760 / 20));
+    border-width: calc(320px / (760 / 3));
+    border-radius: calc(320px / (760 / 20));
+    padding: 0 0 0 calc(320px / (760 / 20));
+    margin-bottom: calc(320px / (760 / 10));
+  }
+}

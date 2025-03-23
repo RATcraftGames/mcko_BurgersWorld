@@ -1,0 +1,18 @@
+.product__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: calc(100vw / (760 / 10));
+}
+
+@media screen and (min-width: 777px){
+  .product__right {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .product__right {
+    margin-right: calc(320px / (760 / 10));
+  }
+}

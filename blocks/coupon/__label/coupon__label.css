@@ -1,0 +1,24 @@
+.coupon__label {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(100vw / (760 / 14));
+  line-height: 1.2;
+  color: #0C0C0D;
+  margin: 0 0 calc(100vw / (760 / 26)) calc(100vw / (760 / 10));
+  text-indent: 0;
+}
+
+@media screen and (min-width: 777px){
+  .coupon__label {
+    font-size: 14px;
+    margin: 0 0 26px 10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .coupon__label {
+    font-size: calc(320px / (760 / 14));
+    margin: 0 0 calc(320px / (760 / 26)) calc(320px / (760 / 10));
+  }
+}
